@@ -1,0 +1,100 @@
+Conventions used in CATNIP
+
+-----------------------------------------------------------------
+The sites in the system are counted as:
+
+0  1  2  3  4  ...
+
+o  o  o  o  o
+|  |  |  |  |
+
+-----------------------------------------------------------------
+The state of a site is represented as a vector:
+
+0/zero/off      = [1,0]
+1/ one/ on      = [0,1]
+superposition   = [a,b]
+
+---------------------
+Combining multiple sites into vector notation:
+
+000 = [[1,0],[1,0],[1,0]]
+
+The kronecker product 0⊗0⊗0 works in the same order:
+
+000 = [1,0,0,0,0,0,0,0]
+
+----------------------------------------------------------------
+
+Time evolution of the system is done by applying operators in 
+the tensor-network visual representation:
+
+o  o  o     v
+|  |  |
+#######     A
+|  |  |
+
+In the language of linear algebra this operating is written as:
+
+A.v
+
+---------------------------------------------------------------
+
+To access the correct element in the vector v one can use the 
+binary representation of the number which can be converted to
+decimal:
+
+000 = 0   
+100 = 1
+010 = 2
+110 = 3
+001 = 4
+
+v[1][0][1] = v[5]
+
+---------------------------------------------------------------
+
+To access the correct element in the matrix A one can use the
+same binary respresentation:
+
+[10][01] = [1][3]
+
+---------------------------------------------------------------
+
+The operators can be written as a matrix-product-state where 
+the index convention is:
+
+  #--1    1--#--2   1--#--2    1--#
+  |          |         |          |
+  0          0         0          0
+
+
+  1          1         1          1
+  |          |         |          |
+  #--2    2--#--3   2--#--3    2--#
+  |          |         |          |
+  0          0         0          0
+
+(maybe 0 and 1 have to be switched, the mps contraction shows 
+that this is the correct way, but the testing showed otherwise)
+---------------------------------------------------------------
+
+The way in which rules are defined for these cellular automata
+is that, for example, Q2 O1 R1 is given as:
+
+[0 0]  [1 0]  [0 1]  [1 1]
+[1]    [0]    [0]    [0]
+
+Due to this counting, and the numbering of the sites, the
+cellular automata conventions are the ones picked by Wolfram,
+but in our case the network is mirrored in the counting of the
+sites. If the same time-evolution should be displayed for the
+rules as expected by Wolfram, site 0 should be the most right
+one, and site N the most left:
+
+[1 1]  [1 0]  [0 1]  [0 0]
+  [0]    [0]    [0]    [1]
+
+So this convention can be used, with the idea in mind that 
+the resulting results can be mirrored in space in relation
+to some other convention.

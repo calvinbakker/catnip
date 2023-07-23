@@ -1,0 +1,12 @@
+# local files
+image/
+data/
+
+# python files
+__pycache__/
+ 
+# log files
+log.txt
+
+# temp note
+temp.md
