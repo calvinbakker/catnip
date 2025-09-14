@@ -1,10 +1,8 @@
-# catnip🐈🐈‍⬛: Cellular Automata Tensor Networks in NumPy
+# `catnip🐈🐈‍⬛`: Cellular Automata Tensor Networks in NumPy
 
-Welcome to `catnip`🐈🐈‍⬛! This project provides a NumPy-based code for exploring cellular automata using tensor networks. It is designed as a playground for studying discrete complex systems like cellular automata, and to compute quantum information based measures like the entanglement entropy for these classical dynamical systems. The origin of the project was the question: "How can we use quantum-tools like tensor networks to study discrete dynamical systems?"
+Welcome to `catnip🐈🐈‍⬛`! This project provides a NumPy-based code for exploring cellular automata using tensor networks. It is designed as a playground for studying discrete complex systems like cellular automata, and to compute quantum information based measures like the entanglement entropy for these classical dynamical systems. The origin of the project was the question: "How can we use quantum-tools like tensor networks to study discrete dynamical systems?"
 
-This codebase was originally developed for my MSc thesis at the University of Amsterdam, titled "Measuring the complexity of cellular automata with tensor networks" (2023). Based on that work a paper was written together with Dr. Wout Merbis, which can be found here:
-
-- **[Operator Entanglement Growth Quantifies Complexity of Cellular Automata](https://doi.org/10.1007/978-3-031-63749-0_3)**
+This codebase was originally developed for my MSc thesis at the University of Amsterdam, titled "Measuring the complexity of cellular automata with tensor networks" (2023). Based on that work a paper was written together with Dr. Wout Merbis, which can be found here: **[Operator Entanglement Growth Quantifies Complexity of Cellular Automata](https://doi.org/10.1007/978-3-031-63749-0_3)**
 
 
 ## Key Features
@@ -63,11 +61,11 @@ catnip/
 
 The following image illustrates the procedure for constructing a tensor network operator (MPO) for an elementary cellular automaton.
 
-![ECA to MPO Procedure](assets/eca2mpo.png)
+<img src="assets/eca2mpo.png" alt="ECA2MPO" style="width:60%;"/>
 
 ## Conventions
 
-The tensor operations in this project follow a specific set of index conventions to ensure consistency. For a detailed explanation, please see the [conventions.md](conventions.md) file.
+The tensor operations in this project follow a specific set of index conventions to ensure consistency. For a detailed explanation, please see the [conventions.md](conventions.md) file. A how-to guide for manipulating indices is also included in this file. 
 
 ## Running Tests
 
