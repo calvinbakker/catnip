@@ -1,0 +1,17 @@
+[project]
+name = "catnip"
+version = "1.0.0"
+description = "Cellular Automata Tensor Networks in NumPy"
+readme = "readme.md"
+requires-python = ">=3.9"
+license = {file = "LICENSE.txt"}
+authors = [
+  {email = "calvin.bakker@proton.me"},
+  {name = "Calvin Casper Bakker"}
+]
+
+dependencies = [
+"numpy",
+"matplotlib",
+"cellpylib",
+]

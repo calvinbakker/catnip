@@ -1,0 +1,4 @@
+__pycache__/
+tmp_*/
+.vscode/
+TODO.md
