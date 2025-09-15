@@ -77,10 +77,10 @@ python -m unittest discover tests/ -v
 
 ## Future Improvements
 
-This project is a great starting point, but there's always room to grow! Here are a few areas that could be expanded upon in the future:
+This project is fully tested and functional in its current form, but here are some low hanging fruit 🍒 to expand upon:
 
-- **Expanded Tensor Network Support**: Currently, the code focuses on the Matrix Product State (MPS) and Matrix Product Operator (MPO) ansatz. It could be extended to support other tensor network structures. The `conventions.md` file provides a solid foundation for anyone looking to tackle this.
-- **Performance Benchmarking**: The current implementation has not been benchmarked against other tensor network libraries. It would be interesting to explore more performant backends, such as using `np.einsum` for contractions in `NumPy`, to see how it compares to the tensordot-reshape-transpose procedure which is used extensively.
+- **Expanded Tensor Network Support**: Currently, the code focuses _only_ on the Matrix Product State (MPS) and Matrix Product Operator (MPO) ansatz. It could be extended to support other tensor network ansatzes like PEPS and MERA. The `conventions.md` file provides a solid foundation for anyone looking to tackle this.
+- **Performance Benchmarking**: The current implementation has not been benchmarked against other tensor network libraries/implementations. It would be interesting to explore more performant backends, such as using `np.einsum` for contractions in `NumPy`, to see how it compares to the tensordot-reshape-transpose procedure which is used extensively.
 
 ## Contributing
 
