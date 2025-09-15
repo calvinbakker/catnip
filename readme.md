@@ -1,16 +1,16 @@
 # `catnip🐈🐈‍⬛`: Cellular Automata Tensor Networks in NumPy
 
-Welcome to `catnip🐈🐈‍⬛`! This project provides a NumPy-based code for exploring cellular automata using tensor networks. It is designed as a playground for studying discrete complex systems like cellular automata, and to compute quantum information based measures like the entanglement entropy for these classical dynamical systems. The origin of the project was the question: "How can we use quantum-tools like tensor networks to study discrete dynamical systems?"
+Welcome to `catnip🐈🐈‍⬛`! This project provides NumPy-based code for exploring cellular automata with tensor networks. It is designed to be a playground for studying discrete complex systems like cellular automata, and to compute quantum information based measures like the entanglement entropy for these classical dynamical systems. The origin of the project was the question: "How can we use quantum-tools like tensor networks to study discrete dynamical systems?"
 
-This codebase was originally developed for my MSc thesis at the University of Amsterdam, titled "Measuring the complexity of cellular automata with tensor networks" (2023). Based on that work a paper was written together with Dr. [Wout Merbis](https://github.com/wmerbis/), which can be found here: **[Operator Entanglement Growth Quantifies Complexity of Cellular Automata](https://doi.org/10.1007/978-3-031-63749-0_3)**
+This codebase was originally developed for my MSc thesis at the University of Amsterdam, titled "Measuring the complexity of cellular automata with tensor networks" (2023). Based on that work a paper was written together with [Wout Merbis](https://github.com/wmerbis/), which can be found here: **[Operator Entanglement Growth Quantifies Complexity of Cellular Automata](https://doi.org/10.1007/978-3-031-63749-0_3)**
 
 
 ## Key Features
 
-- **Elementary Cellular Automata (ECA) MPOs**: Implements matrix-product operator (MPO) representations of the 256 elementary cellular automata, allowing for modeling their time-evolution with tensor networks.
-- **Tensor Network Operations**: A suite of core tensor network operations, including tensor contractions, conversions between tensor and vector representations, and bond-dimension optimization with SVDs.
-- **Demonstrative Notebooks**: Comes with Jupyter notebooks to help you visualize ECA evolution and test tensor operations for random vectors, matrices, and tensor networks.
-- **Unit Tests**: Includes a set of tests to ensure the correctness of the ECA implementations and tensor network operations.
+- **Elementary Cellular Automata (ECA) MPOs**: Implements matrix-product operator (MPO) representations of the 256 elementary cellular automata, allowing to model the time-evolution with tensor networks.
+- **Tensor Network Operations**: A set of tensor network operations, including contractions, conversions between tensor and vector representations, and bond-dimension optimizations with SVDs.
+- **Demonstrative Notebooks**: Jupyter notebooks that allow for visualization of ECA time-evolution and to test operations for random vectors, matrices, and tensor networks.
+- **Unit Tests**: A set of tests to ensure the correctness of the ECA implementations and tensor network manipulations, taking into account the numerical precision.
 
 ## Installation
 
